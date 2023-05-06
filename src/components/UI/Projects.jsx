@@ -2,7 +2,7 @@ import React from 'react'
 import cardImg from '../Asset/Images/cable.jpg'
 const Projects = () => {
   return (
-    <section id="projects" className="bg-violet-400">
+    <section id="projects" className="">
       <div className="container ">
         <div className=" flex items-center justify-between flex-wrap">
           <div className="mb-7  sm:mb-0">
