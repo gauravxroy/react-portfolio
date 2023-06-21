@@ -1,8 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {  FaPaperPlane,FaBars } from "react-icons/fa";
 import myLogo from '../Asset/Images/myImg.jpg'
 
 const Header = (props) => {
+
+    // const [msg, setMsg]=useState("Hire");
+
+    //  function alertHandler(){
+    //    alert("You are hired!")
+    //   }
+    
+
   return (
 
    <header className="w-full h-[80px] leading-[80px] flex items-center">
@@ -29,8 +37,8 @@ const Header = (props) => {
             {/* menu end */}
             {/* menu hire right start*/}
             <div className="flex items-center gap-4 ">
-                <button className="flex  items-center gap-2  text-violet-500 border font-600  border-solid border-violet-500  px-4 rounded-[9px] max-h-10 hover:bg-violet-500 hover:text-white hover:font-[500] ease-in duration-400 ">
-                Hire Me<FaPaperPlane />
+                <button   className="flex  items-center gap-2  text-violet-500 border font-600  border-solid border-violet-500  px-4 rounded-[9px] max-h-10 hover:bg-violet-500 hover:text-white hover:font-[500] ease-in duration-400 ">
+                Hire<FaPaperPlane />
                 </button>
                 <span className="text-2xl text-[#4b5563] md:hidden cursor-pointer  "><FaBars/></span>
             </div>

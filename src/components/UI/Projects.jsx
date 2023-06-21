@@ -2,7 +2,7 @@ import React from 'react'
 import cardImg from '../Asset/Images/cable.jpg'
 const Projects = () => {
   return (
-    <section id="projects" className="">
+    <section id="projects" className="bg-black">
       <div className="container ">
         <div className=" flex items-center justify-between flex-wrap">
           <div className="mb-7  sm:mb-0">
@@ -14,7 +14,7 @@ const Projects = () => {
           <div className="w-full bg-white p-4  border-solid border-2  lg:w-1/4 rounded-xl hover:opacity-90 hover:scale-105 transform transition duration-500 hover:shadow-md">
             <div>
               <img className=" rounded-xl  " src={cardImg} alt="" />
-            </div>
+            </div> 
             <div>
           
               <h2 className="pt-4 text-violet-500"> Full Stack Site </h2>
@@ -25,7 +25,7 @@ const Projects = () => {
           {/* 1st card end */}
 
           {/* 2nd card start */}
-          <div className="w-full p-4  border-solid border-2  lg:w-1/4 rounded-xl hover:opacity-90 hover:scale-105 transform transition duration-500 hover:shadow-md">
+          <div className="w-full p-4 bg-white border-solid border-2  lg:w-1/4 rounded-xl hover:opacity-90 hover:scale-105 transform transition duration-500 hover:shadow-md">
             <div>
               <img className=" rounded-xl  " src={cardImg} alt="" />
             </div>
@@ -38,7 +38,7 @@ const Projects = () => {
           {/* 2nd card end */}
 
           {/* 3rd Card Start */}
-          <div className="w-full p-4  border-solid border-2  lg:w-1/4 rounded-xl hover:opacity-90 hover:scale-105 transform transition duration-500 hover:shadow-md">
+          <div className="w-full p-4 bg-white border-solid border-2  lg:w-1/4 rounded-xl hover:opacity-90 hover:scale-105 transform transition duration-500 hover:shadow-md">
             <div>
               <img className=" rounded-xl  " src={cardImg} alt="" />
             </div>
