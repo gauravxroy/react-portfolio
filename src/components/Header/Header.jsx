@@ -29,7 +29,7 @@ const Header = (props) => {
             <div className="menu ">
                 <ul className="flex items-center gap-10">
                     <li><a href="#Home" className="text-#94a3b8 font-700 hover:text-violet-500">Home</a></li>
-                    <li><a href="#Projects" className="text-#94a3b8 font-700 hover:text-violet-500 ">Projects</a></li>
+                    <li><a href="#projects" className="text-#94a3b8 font-700 hover:text-violet-500 ">Projects</a></li>
                     <li><a href="#Resume" className="text-#94a3b8  font-700 hover:text-violet-500 ">Resume</a></li>
                     <li><a href="Contact" className="text-#94a3b8 font-700 hover:text-violet-500 "> Contact</a></li>
                 </ul>

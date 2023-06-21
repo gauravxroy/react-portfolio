@@ -26,12 +26,19 @@ const Contact = () => {
                             </div>
                             <div className='mb-5'>
                                 <input type="text"
-                                    placeholder='Message'
+                                    placeholder='Subject'
+                                    className='w-full p-3 focus:outline-none focus:ring focus:border-violet-800  rounded-[5px]'
+                                />
+                            </div>
+                            <div className='mb-5'>
+                                <input type="text"
+                                    placeholder='Enter Message'
                                     className='w-full p-3 focus:outline-none focus:ring focus:border-violet-800  rounded-[5px]'
                                 />
                             </div>
                             <div className="mt-5 justify-center items-center">
-                            <button className=" flex  items-center gap-2  text-violet-500 border font-600  border-solid border-violet-500  px-4 rounded-[5px]  hover:bg-violet-500 hover:text-white hover:font-[500] ease-in duration-500 p-2 " >Send</button>
+                            {/* <button className="w-full flex justify-center gap-2  text-violet-500 border font-600  border-solid border-violet-500  px-4 rounded-[5px]  hover:bg-violet-500 hover:text-white hover:font-[500] ease-in duration-500 p-2 " >Send</button> */}
+                            <a href="/"><button className="w-full flex justify-center items-center gap-2  text-white bg-violet-500 border font-600  border-solid border-violet-500  px-4 rounded-[9px]  hover:bg-white hover:text-violet-500  hover:font-[500] ease-in duration-500 p-2 " >Send Message</button></a>
                             </div>
                         </form>
                     </div>
