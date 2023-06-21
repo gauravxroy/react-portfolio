@@ -6,6 +6,7 @@ import Header from './components/Header/Header';
 import { useEffect } from 'react';
 import Hero from './components/UI/Hero';
 import Projects from './components/UI/Projects';
+import Contact from './components/UI/Contact';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
    <main>
     <Hero/>
     <Projects/>
+    <Contact/>
    </main>
    </>
   );

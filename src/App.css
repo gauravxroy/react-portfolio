@@ -1,27 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@300;400&family=Ubuntu:wght@300;400&display=swap');
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-body{
+body {
     /* font-family: 'Anuphan', sans-serif; */
-font-family: 'Ubuntu', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 }
 
-.container{
+.container {
     max-width: 1170px;
     padding-left: 25px;
     padding-right: 25px;
     margin: auto;
 }
 
-section{
+section {
     padding: 50px 0;
+}
+
+
+
+cardshadow:hover{
+    box-shadow:
+    9px 121.7px 4.4px -32px rgba(0, 0, 0, 0.509),
+    30px 407px 35px -32px rgba(0, 0, 0, 1)
+  ;
 }

@@ -5,7 +5,8 @@ const Contact = () => {
         <section id="contact" className='pb-16'>
             <div className="container  ">
                 <h2 className='text-violet-500 font-[800] text-[2rem] mb-5 text-center'>Get In Touch</h2>
-                <div className="md:flex justify-center ">
+                <div className="md:flex justify-center 
+                ">
                     {/* <div className="w-full md:w-1/2 h-[300px] sm:h-[450px]">
                       <img src="https://cdn.pixabay.com/photo/2016/09/19/07/01/lake-1679708_1280.jpg" alt="img" />
                     </div> */}
