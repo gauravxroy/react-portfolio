@@ -1,11 +1,12 @@
 import React from "react";
-import {  FaPaperPlane,FaBars,FaFileDownload } from "react-icons/fa";
+import {  FaPaperPlane,FaFileDownload } from "react-icons/fa";
 // import CountUp from "react-countup";
-import myImg from '../Asset/Images/heroImg.png'
+// import myImg from '../Asset/Images/heroImg.png'
 import mySvg from '../Asset/Svg/BlobHero.svg'
 const Hero = () => {
+
   return (
-    <section className="0" id="about">
+    <section className=" mb-0" id="about">
       <div className="container pt-4">
         <div className="md:flex items-center justify-between sm:flex-col md:flex-row">
           {/* hero left Content start */}
@@ -50,6 +51,9 @@ const Hero = () => {
           </div>
         </div>
       </div>
+      {/* <div >
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#8b5cf6" fill-opacity="0.73" d="M0,192L80,197.3C160,203,320,213,480,208C640,203,800,181,960,170.7C1120,160,1280,160,1360,160L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+      </div> */}
     </section>
   );
 };
