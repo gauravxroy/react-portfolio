@@ -19,7 +19,7 @@ const Contact = () => {
                       <img src="https://cdn.pixabay.com/photo/2016/09/19/07/01/lake-1679708_1280.jpg" alt="img" />
                     </div> */}
           <div className="w-full  mt-8 md:mt-0 md:w-1/2  lg:flex items-center bg-indigo-100 rounded-[8px] px-4 lg:px-8 py-10">
-            <form action="" className="w-full " data-netlify="true">
+            <form action="" className="w-full " data-netlify="true" netlify>
               <div className="mb-5">
                 <input
                   type="text"
