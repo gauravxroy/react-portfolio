@@ -2,7 +2,7 @@ import React from "react";
 import { FaPaperPlane, FaFileDownload } from "react-icons/fa";
 // import CountUp from "react-countup";
 // import myImg from '../Asset/Images/heroImg.png'
-import mySvg from "../Asset/Images/profile-pic.png";
+// import mySvg from "../Asset/Images/profile-pic.png";
 const Hero = () => {
   return (
     <section className=" mb-0 bg-[#1f2937]" id="about">
@@ -61,7 +61,7 @@ const Hero = () => {
           <div className="basis-1/3  flex-wrap flex items-center   ">
             <img
               className="sm:my-4 "
-              src={mySvg}
+              // src={mySvg}
               alt=""
               ata-aos="fade-up "
               data-aos-duration="1800"
