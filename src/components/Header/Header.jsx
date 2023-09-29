@@ -1,69 +1,96 @@
-import React, {} from 'react'
-import { FaPaperPlane, FaBars } from "react-icons/fa";
-import myLogo from '../Asset/Images/myImg.jpg'
+import { Fragment } from "react";
+import { Disclosure, Menu, Transition } from "@headlessui/react";
+import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import { FaPaperPlane } from "react-icons/fa";
+const navigation = [
+  { name: "Dashboard", href: "#about", current: true },
+  { name: "Team", href: "#", current: false },
+  { name: "Projects", href: "#projects", current: false },
+  { name: "Calendar", href: "#", current: false },
+];
 
-const Header = (props) => {
+function classNames(...classes) {
+  return classes.filter(Boolean).join(" ");
+}
 
-        // const [msg, setMsg]=useState("Hire");
-
-         function alertHandler(){
-           alert("You are hired!")
-          }
-    //     const headerRef=useRef(null)
-
-    //   const handleClick=(e)=>{
-    //     e.preventDefault()
-
-    //     const targetAttr=e.target.getAttribute('href')
-    //     const location=document.querySelector(targetAttr).offsetTop  
-
-    //     window.scrollTo({
-    //       top:location-80,
-    //       left:0,
-
-    //     })
-    //   }
-
-    return (
-
-        <header className="w-full h-[80px] leading-[80px] flex items-center">
-            <div className="container">
-                <div className="flex items-center justify-between">
-                    {/* Logo */}
-                    <div className="flex items-center gap-[10px]">
-                        <span className="w-[35px] h-[35px] bg-violet-500 text-white text-[18px] font-[200] rounded-full flex items-center justify-center"><img src="" alt="" /><img src={myLogo} alt="" className="w-[35px] h-[35px] object-cover object-center rounded-full" /></span>
-                        <div className="leading-[20px]">
-                            <h2 className="text-xl text-smallTextColor font-700">Gaurav</h2>
-                            <p className="text-violet-500 font-300">Portfolio Site</p>
-                        </div>
-                    </div>
-                    {/*   Logo end */}
-                    {/* menu start */}
-                    <div className="menu ">
-                        <ul className="flex items-center gap-10">
-                          <li>  <a href="#Home" className="text-#94a3b8 font-700 hover:text-violet-500">Home</a></li>
-                          <li> <a href="#projects" className="text-#94a3b8 font-700 hover:text-violet-500 ">Projects</a></li>
-                          <li> <a href="#Resume" className="text-#94a3b8  font-700 hover:text-violet-500 ">Resume</a></li>
-                          <li> <a href="#contact" className="text-#94a3b8 font-700 hover:text-violet-500 "> Contact</a></li>
-                        </ul>
-                    </div>
-                    
-                         {/* menu end */ }
-                         {/* menu hire right start*/ }
-                      <div className="flex items-center gap-4 ">
-                        <button onClick={alertHandler} className="flex  items-center gap-2  text-violet-500 border font-600  border-solid border-violet-500  px-4 rounded-[9px] max-h-10 hover:bg-violet-500 hover:text-white hover:font-[500] ease-in duration-400 ">
-                           Hire<FaPaperPlane />
-                        </button>
-                        <span className="text-2xl text-[#4b5563] md:hidden cursor-pointer  "><FaBars /></span>
-                      </div>
-                         {/* menu hire right   end*/ }
-                    
+export default function Example() {
+  return (
+    <Disclosure as="nav" className="bg-gray-800">
+      {({ open }) => (
+        <>
+          <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+            <div className="relative flex h-16 items-center justify-between">
+              <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                {/* Mobile menu button*/}
+                <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                  <span className="absolute -inset-0.5" />
+                  <span className="sr-only">Open main menu</span>
+                  {open ? (
+                    <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
+                  ) : (
+                    <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
+                  )}
+                </Disclosure.Button>
+              </div>
+              <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+                <div className="flex flex-shrink-0 items-center">
+                  <img
+                    className="h-8 w-auto"
+                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+                    alt="Your Company"
+                  />
                 </div>
+                <div className="hidden sm:ml-6 sm:block">
+                  <div className="flex space-x-4">
+                    {navigation.map((item) => (
+                      <a
+                        key={item.name}
+                        href={item.href}
+                        className={classNames(
+                          item.current
+                            ? "bg-gray-900 text-white"
+                            : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                          "rounded-md px-3 py-2 text-sm font-medium"
+                        )}
+                        aria-current={item.current ? "page" : undefined}
+                      >
+                        {item.name}
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              </div>
+              <a href="#contact">
+                <button className=" flex  items-center gap-2  text-white bg-violet-500 border font-600  border-solid border-violet-500  px-4 rounded-[9px]  hover:opacity-75  hover:text-opacity-100 hover:font-[500]  p-2 ">
+                  Hire Me
+                  <FaPaperPlane />
+                </button>
+              </a>
+            </div>
+          </div>
 
-                 </div>
-    
-       </header>
+          <Disclosure.Panel className="sm:hidden">
+            <div className="space-y-1 px-2 pb-3 pt-2">
+              {navigation.map((item) => (
+                <Disclosure.Button
+                  key={item.name}
+                  as="a"
+                  href={item.href}
+                  className={classNames(
+                    item.current
+                      ? "bg-gray-900 text-white"
+                      : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                    "block rounded-md px-3 py-2 text-base font-medium"
+                  )}
+                  aria-current={item.current ? "page" : undefined}
+                >
+                  {item.name}
+                </Disclosure.Button>
+              ))}
+            </div>
+          </Disclosure.Panel>
+        </>
+      )}
+    </Disclosure>
   );
-};
-
-export default Header
+}

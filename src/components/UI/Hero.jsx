@@ -1,12 +1,11 @@
 import React from "react";
-import {  FaPaperPlane,FaFileDownload } from "react-icons/fa";
+import { FaPaperPlane, FaFileDownload } from "react-icons/fa";
 // import CountUp from "react-countup";
 // import myImg from '../Asset/Images/heroImg.png'
-import mySvg from '../Asset/Svg/BlobHero.svg'
+import mySvg from "../Asset/Images/profile-pic.png";
 const Hero = () => {
-
   return (
-    <section className=" mb-0" id="about">
+    <section className=" mb-0 bg-[#1f2937]" id="about">
       <div className="container pt-4">
         <div className="md:flex items-center justify-between sm:flex-col md:flex-row">
           {/* hero left Content start */}
@@ -25,14 +24,28 @@ const Hero = () => {
               data-aos="fade-up"
               data-aos-duration="1500"
               className="text-[#8b9cb5] font-[700] text-[1.5rem] sm:text-[40px]  mt-3"
-            > 
+            >
               I'm Gaurav Roy <br />
               Full Stack Developer
             </h1>
-            <div ata-aos="fade-right"
-              data-aos-duration="1800" data-aos-delay="200" className="flex items-center gap-6 mt-7">
-                <a href="/"><button className=" flex  items-center gap-2  text-white bg-violet-500 border font-600  border-solid border-violet-500  px-4 rounded-[9px]  hover:bg-white hover:text-violet-500  hover:font-[500] ease-in duration-500 p-2 " >Hire Me<FaPaperPlane /></button></a>
-                <a href="/"><button className=" flex  items-center gap-2  text-violet-500 border font-600  border-solid border-violet-500  px-4 rounded-[9px]  hover:bg-violet-500 hover:text-white hover:font-[500] ease-in duration-500 p-2 " >Resume<FaFileDownload /></button></a>
+            <div
+              data-aos="fade-right"
+              data-aos-duration="1800"
+              data-aos-delay="200"
+              className="flex items-center gap-6 mt-7 xsm:my-8 "
+            >
+              <a href="/">
+                <button className=" flex  items-center gap-2  text-white bg-violet-500 border font-600  border-solid border-violet-500  px-4 rounded-[9px]  hover:bg-white hover:text-violet-500  hover:font-[500] ease-in duration-500 p-2 ">
+                  Hire Me
+                  <FaPaperPlane />
+                </button>
+              </a>
+              <a href="/">
+                <button className=" flex  items-center gap-2  text-violet-500 border font-600  border-solid border-violet-500  px-4 rounded-[9px]  hover:bg-violet-500 hover:text-white hover:font-[500] ease-in duration-500 p-2 ">
+                  Resume
+                  <FaFileDownload />
+                </button>
+              </a>
             </div>
           </div>
 
@@ -45,9 +58,14 @@ const Hero = () => {
           </div> */}
           {/* Hero img end */}
 
-          <div className="basis-1/3  flex-wrap flex items-center  "  >
-             <img src={mySvg} alt=""  className=" animate-pulse duration-400" ata-aos="fade-up "
-              data-aos-duration="1800" />
+          <div className="basis-1/3  flex-wrap flex items-center   ">
+            <img
+              className="sm:my-4 "
+              src={mySvg}
+              alt=""
+              ata-aos="fade-up "
+              data-aos-duration="1800"
+            />
           </div>
         </div>
       </div>
