@@ -1,7 +1,7 @@
 // import { Fragment } from "react";
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import { FaPaperPlane } from "react-icons/fa";
+
 const navigation = [
   { name: "Dashboard", href: "#about", current: true },
   { name: "Team", href: "#", current: false },
@@ -33,13 +33,6 @@ export default function Example() {
                 </Disclosure.Button>
               </div>
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-                <div className="flex flex-shrink-0 items-center">
-                  <img
-                    className="h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-                    alt="Your Company"
-                  />
-                </div>
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
@@ -60,12 +53,16 @@ export default function Example() {
                   </div>
                 </div>
               </div>
-              <a href="#contact">
-                <button className=" flex  items-center gap-2  text-white bg-violet-500 border font-600  border-solid border-violet-500  px-4 rounded-[9px]  hover:opacity-75  hover:text-opacity-100 hover:font-[500]  p-2 ">
-                  Hire Me
-                  <FaPaperPlane />
-                </button>
-              </a>
+
+              <div className="hirebutton">
+                <a href="/" target="_blank" rel="noopener noreferrer">
+                  <button class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
+                    <span class="relative px-4 py-2 transition-all ease-in duration-700 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                      Hire Me
+                    </span>
+                  </button>
+                </a>
+              </div>
             </div>
           </div>
 
