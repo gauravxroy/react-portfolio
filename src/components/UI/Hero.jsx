@@ -1,11 +1,12 @@
 import React from "react";
-import { FaPaperPlane, FaFileDownload } from "react-icons/fa";
+import { FaPaperPlane } from "react-icons/fa";
 // import CountUp from "react-countup";
 // import myImg from '../Asset/Images/heroImg.png'
 import mySvg from "../Asset/Images/profile-pic.png";
+
 const Hero = () => {
   return (
-    <section className=" mb-0 bg-[#1f2937]" id="about">
+    <section className=" mb-0 bg-[#111827]" id="about">
       <div className="container pt-4">
         <div className="md:flex items-center justify-between sm:flex-col md:flex-row">
           {/* hero left Content start */}
@@ -14,7 +15,7 @@ const Hero = () => {
             <h5
               data-aos="fade-right"
               data-aos-duration="1500"
-              className="  text-violet-500 text-[20px] "
+              className="  text-violet-500 text-[35px] "
             >
               Hello , World
             </h5>
@@ -23,7 +24,7 @@ const Hero = () => {
             <h1
               data-aos="fade-up"
               data-aos-duration="1500"
-              className="text-[#8b9cb5] font-[700] text-[1.5rem] sm:text-[40px]  mt-3"
+              className="text-[#8b9cb5] font-[700] text-[2rem] sm:text-[45px]  mt-3"
             >
               I'm Gaurav Roy <br />
               Full Stack Developer
@@ -35,28 +36,26 @@ const Hero = () => {
               className="flex items-center gap-6 mt-7 xsm:my-8 "
             >
               <a href="/">
-                <button className=" flex  items-center gap-2  text-white bg-violet-500 border font-600  border-solid border-violet-500  px-4 rounded-[9px]  hover:bg-white hover:text-violet-500  hover:font-[500] ease-in duration-500 p-2 ">
+                <button class=" flex  justify-items-center  gap-2 text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-1 mb-2">
                   Hire Me
                   <FaPaperPlane />
                 </button>
               </a>
-              <a href="/">
-                <button className=" flex  items-center gap-2  text-violet-500 border font-600  border-solid border-violet-500  px-4 rounded-[9px]  hover:bg-violet-500 hover:text-white hover:font-[500] ease-in duration-500 p-2 ">
-                  Resume
-                  <FaFileDownload />
-                </button>
-              </a>
+              <div className="resume">
+                <a href="/">
+                  <button
+                    type="button"
+                    class="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
+                  >
+                    Resume
+                  </button>
+                </a>
+              </div>
             </div>
           </div>
 
           {/* hero left Content end */}
           {/* Hero img start */}
-          {/* <div className="basis-1/3  flex-wrap">
-            <figure className="flex items-center justify-center   ">
-              <img src={myImg} alt=""  className="  h-[231px] "/>
-            </figure>
-          </div> */}
-          {/* Hero img end */}
 
           <div className="basis-1/3  flex-wrap flex items-center   ">
             <img
@@ -69,9 +68,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      {/* <div >
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#8b5cf6" fill-opacity="0.73" d="M0,192L80,197.3C160,203,320,213,480,208C640,203,800,181,960,170.7C1120,160,1280,160,1360,160L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
-      </div> */}
     </section>
   );
 };
