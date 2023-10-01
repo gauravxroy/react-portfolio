@@ -2,7 +2,7 @@ import React from "react";
 import AvatarImg from "../Asset/Images/profile-pic.png";
 const About = () => {
   return (
-    <section id="about" className=" bg-[#1f2937] ">
+    <section id="about" className=" bg-[#111827] ">
       <div
         className="max-w-sm w-full lg:max-w-full lg:flex container"
         data-aos="zoom-in-up"
