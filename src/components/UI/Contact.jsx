@@ -2,7 +2,7 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <section id="contact" className="pb-16 bg-[#1f2937]">
+    <section id="contact" className="pb-16 bg-[#111827]">
       <div
         className="container  "
         data-aos="zoom-in-up"
