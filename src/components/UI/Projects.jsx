@@ -93,7 +93,7 @@ const Projects = () => {
 
           {/* 2nd card start */}
           <div
-            class="relative flex w-full max-w-[26rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg cursor-pointer "
+            class="relative flex w-full max-w-[26rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg cursor-pointer hover:drop-shadow-lg "
             data-aos="zoom-in-up"
             data-aos-duration="1200"
           >
