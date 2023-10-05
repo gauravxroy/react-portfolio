@@ -2,12 +2,12 @@ import React from "react";
 import { FaPaperPlane } from "react-icons/fa";
 // import CountUp from "react-countup";
 // import myImg from '../Asset/Images/heroImg.png'
-import mySvg from "../Asset/Images/profile-pic.png";
+// import mySvg from "../Asset/Images/profile-pic.png";
 
 const Hero = () => {
   return (
-    <section className=" mb-0 bg-[#111827]" id="about">
-      <div className="container pt-4">
+    <section className=" mb-0 bg-[#111827] " id="about">
+      <div className="container pt-4 ">
         <div className="md:flex items-center justify-between sm:flex-col md:flex-row">
           {/* hero left Content start */}
 
@@ -27,7 +27,7 @@ const Hero = () => {
               className="text-[#8b9cb5] font-[700] text-[2rem] sm:text-[45px]  mt-3"
             >
               I'm Gaurav Roy <br />
-              Full Stack Developer
+              Aspiring Software Developer
             </h1>
             <div
               data-aos="fade-right"
@@ -58,13 +58,13 @@ const Hero = () => {
           {/* Hero img start */}
 
           <div className="basis-1/3  flex-wrap flex items-center   ">
-            <img
+            {/* <img
               className="sm:my-4 "
               src={mySvg}
               alt=""
               ata-aos="fade-up "
               data-aos-duration="1800"
-            />
+            /> */}
           </div>
         </div>
       </div>
