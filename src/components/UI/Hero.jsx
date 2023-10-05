@@ -6,7 +6,7 @@ import { FaPaperPlane } from "react-icons/fa";
 
 const Hero = () => {
   return (
-    <section className=" mb-0 bg-[#111827] " id="about">
+    <section className=" mb-0 bg-[#111827] h-[100vh]" id="about">
       <div className="container pt-4 ">
         <div className="md:flex items-center justify-between sm:flex-col md:flex-row">
           {/* hero left Content start */}
