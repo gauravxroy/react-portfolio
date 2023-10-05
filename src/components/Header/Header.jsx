@@ -3,10 +3,11 @@ import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
-  { name: "Dashboard", href: "#about", current: true },
-  { name: "Team", href: "#", current: false },
+  { name: "Home", href: "/", current: true },
+  { name: "About", href: "#about", current: false },
+  { name: "Skills", href: "#skills", current: false },
   { name: "Projects", href: "#projects", current: false },
-  { name: "Calendar", href: "#", current: false },
+  { name: "Contact", href: "#contact", current: false },
 ];
 
 function classNames(...classes) {
@@ -15,7 +16,7 @@ function classNames(...classes) {
 
 function Header() {
   return (
-    <Disclosure as="nav" className="bg-gray-800 ">
+    <Disclosure as="nav" className="bg-[#111827] ">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
