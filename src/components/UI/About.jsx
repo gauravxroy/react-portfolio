@@ -61,14 +61,14 @@ const About = () => {
               </div>
             </div>
             <p className="text-gray-700 text-base mx-1">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Voluptatibus quia, nulla! Maiores et perferendis eaque,
-              exercitationem praesentium nihil. Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Aliquam animi pariatur perferendis,
-              maxime sed sit magni, libero nam nesciunt accusamus placeat
-              temporibus natus eum. Nihil consequuntur ad id unde ducimus saepe
-              temporibus autem, labore laborum doloremque iste debitis animi
-              aspernatur!
+              Passionate developer from india using technology to solve
+              real-world problems. I have a strong foundation in technologies
+              such as Java, Javascript and DBs like MySQL as well as experience
+              with data structures and algorithms. I am also interested in web
+              app development and currently working on several projects in these
+              areas. In addition to my technical skills, I am a strong
+              collaborator and communicator, and I always looking for
+              opportunities to apply my skills to make a positive impact.
             </p>
           </div>
         </div>
