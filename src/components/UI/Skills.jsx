@@ -11,14 +11,19 @@ import {
   FaNpm,
   FaReact,
 } from "react-icons/fa";
-
+import { BsFiletypeScss } from "react-icons/bs";
+import { TbBrandCpp } from "react-icons/tb";
 const Skills = () => {
   return (
-    <section id="skills" className="bg-[#111827] h-[100vh] ">
+    <section id="skills" className="  h-[100vh] bg-[#111827]">
       <h2 className="text-violet-500 font-[800] text-[2rem]  text-underline text-center mb-[2rem]">
         Skills
       </h2>
-      <div className="container flex justify-evenly flex-wrap gap-2 cursor-pointer">
+      <div
+        className="container flex justify-evenly flex-wrap gap-2 cursor-pointer "
+        data-aos="flip-up"
+        data-aos-onDurationChange="1200"
+      >
         {/* card 1 start */}
         <div className="block max-w-[6rem] p-6  bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
           <div>
@@ -78,10 +83,36 @@ const Skills = () => {
               className="flex justify-center items-center"
               style={{ color: "white" }}
             >
+              <BsFiletypeScss size={50} />
+            </span>
+            <p className="font-normal text-gray-700 dark:text-gray-400 flex justify-center items-center">
+              Scss
+            </p>
+          </div>
+        </div>
+        <div className="block max-w-[6rem] p-6  bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+          <div>
+            <span
+              className="flex justify-center items-center"
+              style={{ color: "white" }}
+            >
               <FaJava size={50} />
             </span>
             <p className="font-normal text-gray-700 dark:text-gray-400 flex justify-center items-center">
               Java
+            </p>
+          </div>
+        </div>
+        <div className="block max-w-[6rem] p-6  bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+          <div>
+            <span
+              className="flex justify-center items-center"
+              style={{ color: "white" }}
+            >
+              <TbBrandCpp size={50} />
+            </span>
+            <p className="font-normal text-gray-700 dark:text-gray-400 flex justify-center items-center">
+              C++
             </p>
           </div>
         </div>
