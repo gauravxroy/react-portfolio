@@ -1,7 +1,7 @@
 import React from "react";
 import AvatarImg from "../Asset/Images/profile-pic.png";
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
-
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { RiTwitterXFill } from "react-icons/ri";
 const About = () => {
   return (
     <section id="about" className=" bg-[#111827] ">
@@ -55,7 +55,7 @@ const About = () => {
                 <span>
                   <a href="/">
                     {" "}
-                    <FaTwitter size={20} />
+                    <RiTwitterXFill size={20} />
                   </a>
                 </span>
               </div>

@@ -6,6 +6,7 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 import { MdOutlineWork } from "react-icons/md";
+import { RiTwitterXFill } from "react-icons/ri";
 const Footer = () => {
   return (
     <footer className="bg-[#1e293b] pt-12 ">
@@ -71,7 +72,7 @@ const Footer = () => {
                   className="text-gray-300  "
                 >
                   {" "}
-                  <FaTwitter size={20} />
+                  <RiTwitterXFill size={20} />
                 </a>
               </span>
             </div>
