@@ -3,7 +3,7 @@ import {
   FaPaperPlane,
   FaGithub,
   FaLinkedinIn,
-  FaTwitter,
+  // FaTwitter,
 } from "react-icons/fa";
 import { MdOutlineWork } from "react-icons/md";
 import { RiTwitterXFill } from "react-icons/ri";
@@ -72,7 +72,7 @@ const Footer = () => {
                   className="text-gray-300  "
                 >
                   {" "}
-                  <RiTwitterXFill size={20} />
+                  {/* <RiTwitterXFill size={20} /> */}
                 </a>
               </span>
             </div>
