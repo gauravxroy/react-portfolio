@@ -32,7 +32,7 @@ const Projects = () => {
                 data-ripple-dark="true"
               >
                 <span class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 transform">
-                  <a href="/">
+                  <a href="https://movizzbygaurav.vercel.app/" target="_blank_">
                     {" "}
                     <FaLink size={20} />
                   </a>
@@ -45,11 +45,14 @@ const Projects = () => {
                   MoviZZ{" "}
                 </h5>
                 <span class="flex items-center gap-2  text-base font-normal leading-relaxed text-blue-gray-900 antialiased">
-                  <a href="/">
+                  <a href="https://movizzbygaurav.vercel.app/" target="_blank_">
                     {" "}
                     <FaLink size={20} />
                   </a>
-                  <a href="/">
+                  <a
+                    href="https://github.com/gauravxroy/moviZZ"
+                    target="_blank_"
+                  >
                     {" "}
                     <FaGithub size={20} />
                   </a>
@@ -92,7 +95,7 @@ const Projects = () => {
           {/* 1st card end */}
 
           {/* 2nd card start */}
-          <div
+          {/* <div
             class="relative flex w-full max-w-[26rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg cursor-pointer hover:drop-shadow-lg "
             data-aos="zoom-in-up"
             data-aos-duration="1200"
@@ -162,7 +165,7 @@ const Projects = () => {
                 </button>
               </a>
             </div>
-          </div>
+          </div> */}
           {/* 2nd card end */}
 
           {/* 3rd Card Start */}
