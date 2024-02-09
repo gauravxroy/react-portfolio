@@ -6,7 +6,7 @@ import {
   // FaTwitter,
 } from "react-icons/fa";
 import { MdOutlineWork } from "react-icons/md";
-import { RiTwitterXFill } from "react-icons/ri";
+// import { RiTwitterXFill } from "react-icons/ri";
 const Footer = () => {
   return (
     <footer className="bg-[#1e293b] pt-12 ">
